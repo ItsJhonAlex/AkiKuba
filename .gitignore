@@ -1,0 +1,362 @@
+# AKIKUBA - Gitignore Configuration
+# Generated for multi-stack development (Node.js, Python, Web)
+
+# ====================
+# Dependencies & Packages
+# ====================
+
+# Node.js
+node_modules/
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+pnpm-debug.log*
+.pnpm-store/
+.yarn/
+.npm
+.node_repl_history
+
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
+pip-log.txt
+pip-delete-this-directory.txt
+.tox/
+.coverage
+.coverage.*
+.cache
+.pytest_cache/
+nosetests.xml
+coverage.xml
+*.cover
+*.py,cover
+.hypothesis/
+
+# Package managers
+package-lock.json
+yarn.lock
+pnpm-lock.yaml
+Pipfile.lock
+poetry.lock
+
+# ====================
+# Environment & Configuration
+# ====================
+
+# Environment variables
+.env
+.env.local
+.env.*.local
+.env.development
+.env.staging
+.env.production
+.env.test
+
+# Configuration files
+config/local.json
+config/production.json
+.config/
+.secrets/
+
+# ====================
+# Build & Distribution
+# ====================
+
+# Build outputs
+dist/
+build/
+out/
+.next/
+.nuxt/
+.output/
+.vite/
+target/
+
+# Static generated files
+public/build/
+static/build/
+assets/build/
+
+# Webpack
+.webpack/
+
+# ====================
+# Development Tools
+# ====================
+
+# IDE & Editors
+.vscode/settings.json
+.vscode/launch.json
+.vscode/extensions.json
+.idea/
+*.swp
+*.swo
+*~
+.DS_Store
+Thumbs.db
+
+# Temporary files
+*.tmp
+*.temp
+.tmp/
+.temp/
+
+# ====================
+# Logs & Debugging
+# ====================
+
+# Application logs
+*.log
+logs/
+*.log.*
+.log/
+
+# Debug files
+.debug/
+debug.log
+error.log
+access.log
+
+# ====================
+# Database & Storage
+# ====================
+
+# SQLite
+*.db
+*.sqlite
+*.sqlite3
+
+# Database dumps
+*.sql
+*.dump
+
+# Local storage
+data/
+storage/
+uploads/
+media/local/
+
+# ====================
+# Testing & Coverage
+# ====================
+
+# Testing
+.nyc_output/
+coverage/
+*.lcov
+.coverage/
+htmlcov/
+.tox/
+.nox/
+.coverage
+.coverage.*
+.cache
+.pytest_cache/
+test-results/
+test-reports/
+
+# End-to-end testing
+cypress/videos/
+cypress/screenshots/
+playwright-report/
+test-results/
+
+# ====================
+# Cloud & Deployment
+# ====================
+
+# Docker
+docker-compose.override.yml
+.dockerignore.local
+
+# Kubernetes
+*.kubeconfig
+
+# Terraform
+*.tfstate
+*.tfstate.*
+.terraform/
+
+# Cloud functions
+.functions/
+.netlify/
+.vercel/
+
+# ====================
+# Security & Certificates
+# ====================
+
+# Keys & Certificates
+*.pem
+*.key
+*.crt
+*.csr
+*.p12
+*.pfx
+id_rsa
+id_rsa.pub
+.ssh/
+
+# Security
+.secrets
+.vault
+auth.json
+
+# ====================
+# Mobile Development
+# ====================
+
+# React Native
+.expo/
+.expo-shared/
+
+# iOS
+ios/build/
+ios/Pods/
+ios/*.xcworkspace/
+
+# Android
+android/app/build/
+android/build/
+android/.gradle/
+*.apk
+*.aab
+
+# ====================
+# Content & Media
+# ====================
+
+# Large media files
+*.mp4
+*.mov
+*.avi
+*.mkv
+*.wmv
+*.flv
+*.webm
+
+# High-res images (keep small ones for development)
+**/images/original/
+**/images/raw/
+**/assets/hd/
+
+# User uploads (development)
+uploads/users/
+uploads/temp/
+storage/app/public/uploads/
+
+# ====================
+# Documentation Build
+# ====================
+
+# Generated docs
+docs/_build/
+docs/.doctrees/
+site/
+_site/
+
+# GitBook
+_book/
+
+# ====================
+# Backup & Archive
+# ====================
+
+# Backup files
+*.bak
+*.backup
+*.old
+*.orig
+*~
+*.swp
+
+# Archive files
+*.tar
+*.tar.gz
+*.zip
+*.rar
+*.7z
+
+# ====================
+# OS Generated Files
+# ====================
+
+# macOS
+.DS_Store
+.AppleDouble
+.LSOverride
+Icon?
+._*
+.Spotlight-V100
+.Trashes
+
+# Windows
+Thumbs.db
+ehthumbs.db
+Desktop.ini
+$RECYCLE.BIN/
+
+# Linux
+*~
+.fuse_hidden*
+.directory
+.Trash-*
+
+# ====================
+# Project Specific
+# ====================
+
+# AKIKUBA specific
+akikuba-local/
+akikuba-temp/
+user-content/development/
+cosplay-images/development/
+
+# Local development
+local/
+dev-data/
+mock-data/
+test-data/
+
+# Temporary feature branches content
+feature-*-temp/
+experiment-*/
+
+# ====================
+# Analytics & Monitoring
+# ====================
+
+# Analytics
+analytics/raw/
+metrics/local/
+
+# Performance monitoring
+.benchmarks/
+performance-logs/
+
+# ====================
+# Third-party Services
+# ====================
+
+# Sentry
+.sentryclirc
+
+# Firebase
+.firebase/
+firebase-debug.log
+firestore-debug.log
+
+# ====================
+# End of AKIKUBA .gitignore
+# ====================
+
+# Keep empty directories with .gitkeep files
+!.gitkeep
+
+# Always include important config templates
+!config/*.example.json
+!.env.example
+!docker-compose.yml
